@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8B77815E22E63D2F9C0815A /* libPods-HomeSafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7840A1159CC6AAE6297D7C68 /* libPods-HomeSafe.a */; };
 		D6FD0B1B2066C8B00054E214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD0B1A2066C8B00054E214 /* AppDelegate.swift */; };
 		D6FD0B1D2066C8B00054E214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD0B1C2066C8B00054E214 /* ViewController.swift */; };
 		D6FD0B202066C8B00054E214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FD0B1E2066C8B00054E214 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		D6FD0B252066C8B00054E214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FD0B232066C8B00054E214 /* LaunchScreen.storyboard */; };
 		D6FD0B302066C8B00054E214 /* HomeSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD0B2F2066C8B00054E214 /* HomeSafeTests.swift */; };
 		D6FD0B3B2066C8B00054E214 /* HomeSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FD0B3A2066C8B00054E214 /* HomeSafeUITests.swift */; };
+		D6FD0B492066D1220054E214 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = D6FD0B482066D1220054E214 /* PodFile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7840A1159CC6AAE6297D7C68 /* libPods-HomeSafe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomeSafe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BE0D536E0AFD5D5B5BD8A2 /* Pods-HomeSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeSafe/Pods-HomeSafe.debug.xcconfig"; sourceTree = "<group>"; };
 		D6FD0B172066C8B00054E214 /* HomeSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD0B1A2066C8B00054E214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6FD0B1C2066C8B00054E214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		D6FD0B362066C8B00054E214 /* HomeSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD0B3A2066C8B00054E214 /* HomeSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSafeUITests.swift; sourceTree = "<group>"; };
 		D6FD0B3C2066C8B00054E214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FD0B482066D1220054E214 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		E70DEF05FDC48C0F003A2F57 /* Pods-HomeSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeSafe/Pods-HomeSafe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B77815E22E63D2F9C0815A /* libPods-HomeSafe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A5789D8D924982C912BCDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7840A1159CC6AAE6297D7C68 /* libPods-HomeSafe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6F078B1ECE85CCD53930530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79BE0D536E0AFD5D5B5BD8A2 /* Pods-HomeSafe.debug.xcconfig */,
+				E70DEF05FDC48C0F003A2F57 /* Pods-HomeSafe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6FD0B0E2066C8AF0054E214 = {
 			isa = PBXGroup;
 			children = (
+				D6FD0B482066D1220054E214 /* PodFile */,
 				D6FD0B192066C8B00054E214 /* HomeSafe */,
 				D6FD0B2E2066C8B00054E214 /* HomeSafeTests */,
 				D6FD0B392066C8B00054E214 /* HomeSafeUITests */,
 				D6FD0B182066C8B00054E214 /* Products */,
+				D6F078B1ECE85CCD53930530 /* Pods */,
+				4A5789D8D924982C912BCDD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6FD0B3F2066C8B00054E214 /* Build configuration list for PBXNativeTarget "HomeSafe" */;
 			buildPhases = (
+				FFD6F23D25B5A60561704C2A /* [CP] Check Pods Manifest.lock */,
 				D6FD0B132066C8AF0054E214 /* Sources */,
 				D6FD0B142066C8AF0054E214 /* Frameworks */,
 				D6FD0B152066C8AF0054E214 /* Resources */,
+				5B1858E5A33267F20F6E0667 /* [CP] Embed Pods Frameworks */,
+				34836AC2611F396853722D0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +264,7 @@
 			files = (
 				D6FD0B252066C8B00054E214 /* LaunchScreen.storyboard in Resources */,
 				D6FD0B222066C8B00054E214 /* Assets.xcassets in Resources */,
+				D6FD0B492066D1220054E214 /* PodFile in Resources */,
 				D6FD0B202066C8B00054E214 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +284,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34836AC2611F396853722D0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeSafe/Pods-HomeSafe-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeSafe/Pods-HomeSafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1858E5A33267F20F6E0667 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeSafe/Pods-HomeSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD6F23D25B5A60561704C2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeSafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6FD0B132066C8AF0054E214 /* Sources */ = {
@@ -424,6 +511,7 @@
 		};
 		D6FD0B402066C8B00054E214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BE0D536E0AFD5D5B5BD8A2 /* Pods-HomeSafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +527,7 @@
 		};
 		D6FD0B412066C8B00054E214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70DEF05FDC48C0F003A2F57 /* Pods-HomeSafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
