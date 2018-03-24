@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uBg-fu-QxL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,22 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="Rl0-6O-8vE">
-            <objects>
-                <navigationController id="uBg-fu-QxL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gXP-K8-F23">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zB1-Oy-13c"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o22-Pc-zmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-127" y="-622"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -33,14 +17,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMq-E4-wLC">
+                                <rect key="frame" x="0.0" y="20" width="140" height="647"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-13-ATX">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="647"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h1M-eK-YGc">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="647"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ke9-13-ATX" firstAttribute="centerX" secondItem="pMq-E4-wLC" secondAttribute="centerX" id="Ac1-hf-3Y5"/>
+                                    <constraint firstItem="ke9-13-ATX" firstAttribute="width" secondItem="pMq-E4-wLC" secondAttribute="width" id="PXP-fU-x5x"/>
+                                    <constraint firstItem="ke9-13-ATX" firstAttribute="centerY" secondItem="pMq-E4-wLC" secondAttribute="centerY" id="ape-Wh-MPA"/>
+                                    <constraint firstItem="ke9-13-ATX" firstAttribute="height" secondItem="pMq-E4-wLC" secondAttribute="height" id="nHg-Z1-zJa"/>
+                                    <constraint firstAttribute="width" constant="140" id="nrW-4U-zNO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="pMq-E4-wLC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i3U-x0-kUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMq-E4-wLC" secondAttribute="bottom" id="kYf-IC-8h6"/>
+                            <constraint firstItem="pMq-E4-wLC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y7P-pB-pqp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TBO-oR-eAX" appends="YES" id="Qd4-vC-s2v"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="VCC-cs-ZUO"/>
+                    <connections>
+                        <outlet property="blurView" destination="ke9-13-ATX" id="NL0-wc-mGu"/>
+                        <outlet property="sideView" destination="pMq-E4-wLC" id="S49-XV-nhu"/>
+                        <outlet property="viewConstraint" destination="y7P-pB-pqp" id="SX4-8j-SA2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="TBO-oR-eAX">
+                    <connections>
+                        <action selector="panPerformed:" destination="BYZ-38-t0r" id="BPK-DC-cvy"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="762" y="-622"/>
+            <point key="canvasLocation" x="760.79999999999995" y="-622.03898050974522"/>
         </scene>
     </scenes>
 </document>
